@@ -76,16 +76,14 @@
       width: 56px;
       height: 56px;
       border-radius: 12px;
-      background: linear-gradient(135deg, #2d1810, #5a3a20);
       flex-shrink: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      overflow: hidden;
     }
 
-    .app-icon svg {
-      width: 28px;
-      height: 28px;
+    .app-icon img {
+      width: 100%;
+      height: 100%;
+      display: block;
     }
 
     .app-info h3 {
@@ -183,18 +181,22 @@
       <h2>Apps</h2>
       <div class="app-card">
         <div class="app-icon">
-          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="8" cy="8" r="2.5" fill="#daa557"/>
-            <circle cx="16" cy="8" r="2.5" fill="#daa557"/>
-            <circle cx="12" cy="14" r="2.5" fill="#daa557"/>
-            <circle cx="8" cy="20" r="2" fill="#daa557" opacity="0.5"/>
-            <circle cx="16" cy="20" r="2" fill="#daa557" opacity="0.5"/>
-          </svg>
+          <img src="/mancala-icon.png" alt="Mancala app icon" />
         </div>
         <div class="app-info">
-          <h3>Mancala — Stone Strategy</h3>
+          <h3>Mancala — Stone &amp; Pit</h3>
           <p>Classic Mancala with three AI difficulties and a training mode.</p>
           <a href="https://apps.apple.com/us/app/mancala-stone-pit/id6760274286">Download on the App Store</a>
+        </div>
+      </div>
+
+      <div class="app-card" style="margin-top: 16px;">
+        <div class="app-icon">
+          <img src="/euchre-icon.png" alt="Euchre Club app icon" />
+        </div>
+        <div class="app-info">
+          <h3>Euchre Club<span class="coming-soon">Coming Soon</span></h3>
+          <p>Classic trick-taking card game with smart AI opponents and Training Mode.</p>
         </div>
       </div>
     </section>
